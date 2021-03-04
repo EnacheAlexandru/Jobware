@@ -1,8 +1,8 @@
 ## 4. MONITORIZARE ANGAJATI 
-Intr-o firma, seful monitorizeaza angajatii prezenti la lucru si le traseaza sarcini individuale. Firma are o aplicatie care ofera:<br> 
+# Intr-o firma, seful monitorizeaza angajatii prezenti la lucru si le traseaza sarcini individuale. Firma are o aplicatie care ofera:<br> 
  a) O fereastra pentru sef:<br>
-    - vede lista angajatilor prezenti în firma, un element din lista precizând numele angajatului si ora la care s-a logat în sistem.<br> 
-    - poate transmite o sarcina unui angajat prezent astfel: selecteaza angajatul din lista, introduce o descriere a sarcinii si declanseaza un buton "transmite sarcina". <br>
+    <t>- vede lista angajatilor prezenti în firma, un element din lista precizând numele angajatului si ora la care s-a logat în sistem.<br> 
+    <t>- poate transmite o sarcina unui angajat prezent astfel: selecteaza angajatul din lista, introduce o descriere a sarcinii si declanseaza un buton "transmite sarcina". <br>
     - imediat dupa transmiterea unei sarcini, aceasta poate fi consultata de catre angajatul respectiv.<br>
  b) Câte o fereastra pentru fiecare angajat:<br>
     - atunci când angajatul vine la serviciu, introduce ora sosirii si declanseaza un buton "prezent". Imediat dupa declansarea butonului, seful vede în lista lui ca angajatul este prezent. <br>
