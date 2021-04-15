@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="409.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="160.0" layoutY="200.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: lightgreen;" text="Logare">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField layoutX="153.0" layoutY="146.0" prefHeight="25.0" prefWidth="194.0" />
+      <TextField layoutX="153.0" layoutY="101.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="59.0" layoutY="103.0" text="Username">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="148.0" text="Parola">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="184.0" layoutY="24.0" prefHeight="54.0" prefWidth="194.0" text="JobWare" textAlignment="RIGHT">
+         <font>
+            <Font name="Consolas Bold Italic" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4809523809523809" endY="1.0" startX="0.3904761904761905" startY="0.5571428571428572">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8899999856948853" green="0.8859602212905884" blue="0.07119999825954437" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1720000058412552" green="0.8600000143051147" blue="0.37566787004470825" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
