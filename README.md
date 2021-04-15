@@ -1,3 +1,9 @@
+## Anunțuri
+- **Iterația 1**
+  - jobware.mdj (cazuri de utilizare și diagrama de clase)
+  - jobware_cazuri_utilizare.docx (cazurile de utilizare detaliate)
+  - LoginWindow.fxml (interafața pentru logare), EmployeeWindow.fxml (interfața pentru angajat), BossWindow.fxml (interfața pentru șef)
+
 ## 4. MONITORIZARE ANGAJAȚI 
 ### Într-o firmă, șeful monitorizează angajații prezenți la lucru și le traseaza sarcini individuale. Firma are o aplicație care oferă: 
 1. O fereastră pentru șef:
