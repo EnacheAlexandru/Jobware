@@ -1,5 +1,5 @@
 ## Anunțuri
-- **Iterația 1**
+- **Faza 1**
   - jobware.mdj (cazuri de utilizare și diagrama de clase)
   - jobware_cazuri_utilizare.docx (cazurile de utilizare detaliate)
   - LoginWindow.fxml (interafața pentru logare), EmployeeWindow.fxml (interfața pentru angajat), BossWindow.fxml (interfața pentru șef)
