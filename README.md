@@ -1,4 +1,8 @@
 ## Anunțuri
+- ***[NOU]*** **Faza 2**
+  - jobware.mdj => diagrama cazurilor de utilizare / diagrama de clase pentru iterația 1 / diagrama de secvență pentru cazurile de la iterația 1 (login, logout)
+  - jobware => proiect cu sursa scrisă în Java (folosind Gradle) cu tehnologii precum: Spring Remoting RMI, Hibernate.
+
 - **Faza 1**
   - jobware.mdj (diagrama cazurilor de utilizare și diagrama de clase)
   - jobware_cazuri_utilizare.docx (cazurile de utilizare detaliate)
