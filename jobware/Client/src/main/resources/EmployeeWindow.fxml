@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="570.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmployeeController">
+   <children>
+      <Label alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="167.0" text="JobWare" textAlignment="RIGHT">
+         <font>
+            <Font name="Consolas Bold Italic" size="38.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4809523809523809" endY="1.0" startX="0.3904761904761905" startY="0.5571428571428572">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8899999856948853" green="0.8859602212905884" blue="0.07119999825954437" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1720000058412552" green="0.8600000143051147" blue="0.37566787004470825" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="466.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: ffcccb;" text="Delogare">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tasksTableView" layoutX="27.0" layoutY="72.0" prefHeight="257.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" minWidth="0.0" prefWidth="237.0" text="Descriere" />
+            <TableColumn fx:id="importanceColumn" prefWidth="83.0" text="Importanță" />
+            <TableColumn fx:id="statusColumn" prefWidth="84.0" text="Status" />
+            <TableColumn fx:id="whenDateColumn" prefWidth="113.0" text="Primită" />
+        </columns>
+      </TableView>
+      <Button layoutX="208.0" layoutY="347.0" mnemonicParsing="false" onAction="#finishTaskHandler" prefHeight="33.0" prefWidth="157.0" style="-fx-background-color: lightgreen;" text="Finalizează sarcină">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

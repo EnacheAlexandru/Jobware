@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.Task" table="Task">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+<!--        <many-to-one name="user" column="Username" class="domain.User"/>-->
+        <property name="username" column="Username" type="java.lang.String"/>
+        <property name="description" column="Description" type="java.lang.String"/>
+        <property name="importance" column="Importance" type="java.lang.String"/>
+        <property name="status" column="Status" type="java.lang.String"/>
+        <property name="whenDate" column="WhenDate" type="java.lang.String"/>
+    </class>
+
+    <class name="domain.User" table="User">
+        <id name="username" column="Username" type="java.lang.String"/>
+        <property name="password" column="Password" type="java.lang.String"/>
+        <property name="name" column="Name" type="java.lang.String"/>
+        <property name="rank" column="Rank" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

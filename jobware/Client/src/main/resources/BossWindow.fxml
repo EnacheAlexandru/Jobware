@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="638.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BossController">
+   <children>
+      <Label alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="8.0" prefHeight="33.0" prefWidth="167.0" text="JobWare" textAlignment="RIGHT">
+         <font>
+            <Font name="Consolas Bold Italic" size="38.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4809523809523809" endY="1.0" startX="0.3904761904761905" startY="0.5571428571428572">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8899999856948853" green="0.8859602212905884" blue="0.07119999825954437" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1720000058412552" green="0.8600000143051147" blue="0.37566787004470825" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: ffcccb;" text="Delogare">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TabPane layoutX="14.0" layoutY="60.0" prefHeight="477.0" prefWidth="608.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.topAnchor="60.0">
+        <tabs>
+          <Tab text="Angajați prezenți">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="530.0">
+                     <children>
+                        <TableView fx:id="loggedEmployeesTableView" layoutX="14.0" layoutY="14.0" prefHeight="310.0" prefWidth="579.0">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="407.0" text="Nume" />
+                            <TableColumn fx:id="dateColumn" prefWidth="171.0" text="Data logării" />
+                          </columns>
+                        </TableView>
+                        <TextArea fx:id="descriptionTextArea" layoutX="14.0" layoutY="372.0" prefHeight="62.0" prefWidth="268.0" />
+                        <Label layoutX="14.0" layoutY="348.0" text="Descriere sarcină">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="361.0" layoutY="389.0" mnemonicParsing="false" onAction="#sendTaskHandler" prefHeight="45.0" prefWidth="167.0" style="-fx-background-color: lightgreen;" text="Trimite sarcină">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <ChoiceBox fx:id="importanceChoiceBox" layoutX="407.0" layoutY="346.0" prefHeight="26.0" prefWidth="160.0" />
+                        <Label layoutX="304.0" layoutY="348.0" text="Importanță">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Sarcini trimise">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="613.0">
+                     <children>
+                        <TableView fx:id="tasksEmployeesTableView" layoutX="14.0" layoutY="16.0" prefHeight="416.0" prefWidth="575.0">
+                          <columns>
+                            <TableColumn fx:id="descriptionColumn" prefWidth="216.0" text="Descriere" />
+                            <TableColumn fx:id="employeeColumn" minWidth="0.0" prefWidth="91.0" text="Angajat" />
+                              <TableColumn fx:id="importanceColumn" prefWidth="72.0" text="Importanță" />
+                              <TableColumn fx:id="statusColumn" minWidth="5.0" prefWidth="92.0" text="Status" />
+                              <TableColumn fx:id="whenDateColumn" prefWidth="103.0" text="Dată" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <StackPane layoutX="488.0" layoutY="11.0" prefHeight="18.0" prefWidth="5.0">
+         <children>
+            <Circle fill="#ff4040" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="numberNotifications" alignment="CENTER" prefHeight="19.0" prefWidth="20.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <ImageView fx:id="iconBell" fitHeight="39.0" fitWidth="42.0" layoutX="449.0" layoutY="11.0" onMouseClicked="#bellHandler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bell.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

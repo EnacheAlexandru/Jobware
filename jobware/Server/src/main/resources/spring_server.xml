@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sessionFactoryORM" class="SessionFactoryORM"/>
+
+    <bean id="userRepo" class="UserRepositoryORM">
+        <constructor-arg ref="sessionFactoryORM"/>
+    </bean>
+
+    <bean id="taskRepo" class="TaskRepositoryORM">
+        <constructor-arg ref="sessionFactoryORM"/>
+    </bean>
+
+
+    <bean id="srv" class="Service">
+        <constructor-arg index="0" ref="userRepo"/>
+        <constructor-arg index="1" ref="taskRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="JobWare"/>
+        <property name="service" ref="srv"/>
+        <property name="serviceInterface" value="ServiceInterface"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+</beans>
