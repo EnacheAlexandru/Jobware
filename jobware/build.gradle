@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
 group 'org.example'
@@ -12,6 +13,17 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+// gradle sonar -D "sonar.projectKey=JobWare" -D "sonar.host.url=http://localhost:9000" -D "sonar.login=sqp_753b34f93766607e00858fab5cc60406df36d817"
+
+subprojects {
+    version = '1.0'
+    sonarqube {
+        properties {
+            property "sonar.sources", "src/main"
+        }
+    }
 }
 
 test {
